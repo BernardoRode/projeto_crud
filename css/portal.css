@@ -1,0 +1,88 @@
+/* Resetando algumas propriedades padrão para uma aparência consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições básicas de fontes e cores */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header - área superior da página */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d99;
+    padding: 15px 30px;
+}
+
+header div img {
+    max-height: 50px; /* Limita a altura da logo */
+}
+
+header h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main - conteúdo principal da página */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Título principal */
+h3.sub-titulo {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Links para ações do usuário */
+main div a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover nos links */
+main div a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividade - Adaptações para dispositivos menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main div a {
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+

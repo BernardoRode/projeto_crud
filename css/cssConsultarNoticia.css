@@ -1,0 +1,94 @@
+/* Reset básico de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo das células da tabela com links */
+td a {
+    color: #ff5733;
+}
+
+td a:hover {
+    color: #d32f2f;
+}
+
+/* Estilo para o layout geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adiciona um espaçamento adicional entre as tabelas e os links */
+table {
+    margin-top: 20px;
+}
+
+/* Adiciona margens para os links de "Adicionar Usuário" e "Logout" */
+a {
+    margin-top: 10px;
+    display: inline-block;
+}

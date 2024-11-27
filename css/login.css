@@ -1,0 +1,133 @@
+/* Resetando algumas margens e preenchimento padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(233, 44, 45, 1) 50%, rgb(0, 0, 0) 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Fundo da página */
+#fundo {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container central do formulário de login */
+.container {
+    background-color: rgb(255, 0, 0);
+    padding: 60px;
+    margin: 50px;
+    border-radius: 10px;
+    width: 300%;
+    max-width: 400px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título do formulário */
+#titulo {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para os campos de input */
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link para a página de registro */
+p a {
+    color: #fbff00;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px;
+    color: white;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Mensagem de erro */
+.mensagem p {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Estilo do cabeçalho */
+#cabecalho img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+label {
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
