@@ -1,4 +1,4 @@
-# Agenda de contatos
+# Portal de noticias
 
 ## 👥 Integrantes
 
